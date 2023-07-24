@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(243, 244, 239);
+    color: rgb(109, 110, 172);
+    h1{
+        color: aliceblue;
+    }
+}
+
+
+
+.dark{
+    background-color: rgb(103, 103, 146);
+    color: rgb(18, 11, 105);
+    
+}
