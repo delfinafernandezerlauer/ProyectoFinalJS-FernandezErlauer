@@ -4,90 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
 
-    <header> 
-        <h1 class="">Seguimiento de Estudiante!</h1>
+    <header>
+        <div class="container p-4">
+            <h1 class="">Seguimiento de Estudiante!</h1>
+        </div> 
+       
         
     </header>
 
     <main>
 
         <section>
-            <button id="switch-color">Cambiar de modo!</button>
+            <button id="switch-color" type="button" class="btn btn-light border ms-5 ">Cambiar de modo!</button>
         </section>
 
-        <section>
-            <ul id="lista-materias">
-                <h3>Seguimiento de Materias
-                </h3>
-                <form action="" id="form-materias">
 
-                    <p>Materia: </p>
-                    <input type="text" id="form-input-materias">
-                    
-                   <p>Nota:</p>
-                   <input type="text" id="form-input-nota">
+        <div class="container ">
 
-                   <input type="submit" value="Agregar materia y nota">
-                </form>
-            </ul>
-        </section>
-
-        <section>
-            <ul>
-                <h3>Buscador de promedio</h3>
-                <form id="form-buscador-materia">
-                <p>Ingrese materia a buscar:</p>
-                <input type="text" id="form-input-buscador-materia">
-                <input type="submit" value="Buscar">
-                </form>
-                <p id="resultado-buscador-materia"></p>
-            </ul>
+            <div class="row pt-4">
+                <h3>Seguimiento de Materias</h3>
+            </div>
+            <div class="row py-4">
+                <div class="col">
+                    <ul id="lista-materias">
+                        
+                        <form action="" id="form-materias">
+        
+                            <p>Materia: </p>
+                            <input type="text" id="form-input-materias">
+                            
+                        <p>Nota:</p>
+                        <input type="text" id="form-input-nota">
+        
+                        <input type="submit" value="Agregar materia y nota">
+                        </form>
+                    </ul>
+                </div>
             
-        </section>
+                <div class="col ">
+                    <ul>
+                        <h3>Buscador de promedio</h3>
+                        <form id="form-buscador-materia">
+                        <p>Ingrese materia a buscar:</p>
+                        <input type="text" id="form-input-buscador-materia">
+                        <input type="submit" value="Buscar">
+                        </form>
+                        <p id="resultado-buscador-materia"></p>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5" >
+                <h3>Control de gastos</h3>
+            </div>
+            <div class="row py-4 text-end">
+
+                <div class="col">
+                    <ul id="lista-presupuesto">
+                        <form action="" id="form-presupuesto">
+                            
+                            <button type="button" class="btn btn-successgit border" id="borrar-datos">Borrar Datos</button>
+                            <p>Ingrese su presupuesto mensual </p>
+                            <input type="text" id="form-input-presupuesto">
+                            <input type="submit" value="Agregar presupuesto">
+                            
+                        </form>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <ol id="lista-gastos ">
+                        <form action="" id="form-gastos">
+                            <p>Ingrese un gasto</p>
+                            <input type="text" id="form-input-gastos">
+                            <input type="submit" value="Agregar gasto">
+                        </form>
+                        <li >
+                            gasto1
+                        </li>
+                    </ol>
+                   
+                </div>
+                <div class="col">
+                    <h4 id="gasto-total"></h4>
+                    <h3 id="saldo"></h3>
+                </div>
+            </div>
+            
+            
+        </div>
 
         <section>
-            
-            <ul id="lista-presupuesto">
-                <form action="" id="form-presupuesto">
-                    <h3>Control de gastos</h3>
-                    <button id="borrar-datos">Borrar Datos</button>
-                    <p>Ingrese su presupuesto mensual </p>
-                    <input type="text" id="form-input-presupuesto">
-                    <input type="submit" value="Agregar presupuesto">
-                    
-                </form>
-                
-            </ul>
-            <ul id="lista-gastos">
-                <form action="" id="form-gastos">
-                    <p>Ingrese un gasto</p>
-                    <input type="text" id="form-input-gastos">
-                    <input type="submit" value="Agregar gasto">
-                </form>
-                <li>
-                    gasto1
-                </li>
-            </ul>
-            <h4 id="gasto-total"></h4>
-            <h3 id="saldo"></h3>
+            <div class="container p-4">
+                <ul id="lista-recetas">
+                    <form action="" id="form-recetas">
+                        <h3>Ideas de comidas</h3>
+                        <input type="text" id="form-input-recetas">
+                        <input type="submit" value="Agregar idea">
+                    </form>
+                    <li>
+                        receta1
+                    </li>
+                </ul>
+            </div>
            
-        </section>
-
-        <section>
-            <ul id="lista-recetas">
-                <form action="" id="form-recetas">
-                    <h3>Ideas de comidas</h3>
-                    <input type="text" id="form-input-recetas">
-                    <input type="submit" value="Agregar idea">
-                </form>
-                <li>
-                    receta1
-                </li>
-            </ul>
            
         </section>
 
