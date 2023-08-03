@@ -1,0 +1,398 @@
+
+[
+    {"name":"El origen",
+    "year":2010,
+    "country": "Estados Unidos",
+    "rating": 8.0,
+    "director":"Christopher Nolan"
+    },
+    { 
+    "name":"Avatar" ,
+    "year":2009,
+    "country": "Estados Unidos",
+    "rating": 7.2,
+    "director":"James Cameron"
+    },
+    
+    
+    {
+        "name":"Guasón",
+        "year":2019,
+        "country": "Estados Unidos",
+        "rating": 8.0,
+        "director": 
+        "Todd Phillips"
+    }
+        
+    ,
+    {
+        "name":"Batman: El caballero de la noche" ,
+        "year":2008
+    ,
+    "country": "Estados Unidos",
+    "rating":8.1,
+    "director": 
+    "Christopher Nolan"
+    }
+    ,
+    
+    {
+        "name":"Bastardos sin gloria" ,
+        "year":2009
+    ,
+    "country": "Estados Unidos",
+    "rating":7.8,
+    "director": 
+    "Quentin Tarantino"
+    }
+    ,
+    {
+        "name":"Interestelar" ,
+        "year":2014
+    ,
+    "country": "Estados Unidos",
+    "rating":7.9,
+    "director":  
+    "Christopher Nolan"
+    }
+    ,
+    
+    {
+        "name":"El cisne negro",
+        "year":2010
+    ,
+    "country": "Estados Unidos",
+    "rating":7.6,
+    "director": 
+    "Darren Aronofsky"
+    }
+    ,
+    
+    {
+        "name":"Gran Torino",
+        "year":2008
+    ,
+    "country": "Estados Unidos",
+    "rating":8.2,
+    "director": 
+    "Clint Eastwood"
+    }
+    ,
+    
+    {
+        "name": "Slumdog millionaire - ¿Quién quiere ser millonario?",
+        "year":2008,
+        "country": "Reino Unido",
+        "rating": 7.7,
+        "director":"Danny Boyle"
+    }
+    ,
+    
+    {
+        "name":"Django sin cadenas",
+        "year":2012
+    ,
+    "country": "Estados Unidos",
+    "rating":7.9,
+    "director": 
+    "Quentin Tarantino"
+    }
+    ,
+    
+    {
+        "name":"La La Land: Una historia de amor",
+        "year":2016
+    ,
+    "country": "Estados Unidos",
+    "rating":7.5,
+    "director": 
+    "Damien Chazelle"
+    }
+    ,
+    
+    {
+        "name":"Match Point",
+        "year":2005,
+        "country": "Reino Unido",
+        "rating":7.7,
+        "director":"Woody Allen"
+    }
+    ,
+    
+    
+    {
+        "name":"Los infiltrados",
+        "year":2006
+    ,
+    "country": "Estados Unidos",
+    "rating":7.9,
+    "director": 
+    "Martin Scorsese"
+    }
+    ,
+    
+    {
+        "name":"WALL·E" ,
+        "year":2008,
+        "country": "Estados Unidos",
+        "rating":7.9,
+        "director":  
+    "Andrew Stanton"
+    }
+    ,
+    
+    {
+        "name":"El secreto de sus ojos" ,
+        "year":2009,
+        "country":"Argentina",
+        "rating":8.1,
+        "director":"Juan José Campanella"
+    }
+    ,
+     
+    
+    {
+        "name":"El curioso caso de Benjamin Button ",
+        "year":2008,
+        "country": "Estados Unidos",
+        "rating":7.2,
+        "director": 
+    "David Fincher"
+    }
+    ,
+    {"name": "Up - Una aventura de altura" ,
+    "year":2009,
+    "country": "Estados Unidos",
+    "rating":7.9,
+    "director":  
+    "Pete Docter"
+    }
+    ,
+    
+    {
+        "name":"Celda 211" ,
+        "year":2009,
+        "country":"España",
+        "rating":7.7,
+        "director": "Daniel Monzón"
+    }
+    ,
+    
+    {
+        "name":"La isla siniestra" ,
+        "year":2010 ,
+        "country": "Estados Unidos",
+        "rating":7.6,
+        "director": 
+    "Martin Scorsese"
+    }
+    ,
+    
+    {
+        "name":"Toy Story 3" ,
+        "year":2010,
+        "country": "Estados Unidos",
+        "rating":7.9,
+        "director": 
+    "Lee Unkrich"
+    }
+    ,
+    
+    {
+        "name":"La vida de los otros" ,
+        "year":2006,
+        "country": "Alemania",
+        "rating":8.0,
+        "director": 
+    "Florian Henckel von Donnersmarck"
+    }
+    ,
+    
+    {
+        "name":"Vidas cruzadas" ,
+        "year":2004 ,
+        "country": "Estados Unidos",
+        "rating":7.6,
+        "director": 
+    "Paul Haggis"
+    }
+    ,
+    
+    {
+        "name":"El laberinto del fauno" ,
+        "year":2006,
+        "country": "España",
+        "rating":7.2,
+        "director":  
+    "Guillermo del Toro"
+    }
+    ,
+    
+    {
+        "name":"El lobo de Wall Street" ,
+        "year":2013 ,
+        "country": "Estados Unidos",
+        "rating":7.6,
+        "director": 
+    "Martin Scorsese"
+    }
+    ,
+    
+    {
+        "name":"Gravedad" ,
+        "year":2013 ,
+        "country": "Estados Unidos",
+        "rating":6.9,
+        "director":  
+    "Alfonso Cuarón"
+    }
+    ,
+    {"name": "Babel" ,
+    "year":2006,
+    "country": "Estados Unidos",
+    "rating":7.2,
+    "director":
+    "Alejandro González Iñárritu"
+    }
+    ,
+    
+    
+    {
+        "name":"Había una vez en... Hollywood ",
+        "year":2019,
+        "country": "Estados Unidos",
+        "rating":7.0,
+        "director":
+    "Quentin Tarantino"
+    }
+    ,
+    
+    {
+        "name":"300" ,
+        "year":2006 ,
+        "country": "Estados Unidos",
+        "rating":7.2,
+        "director": 
+    "Zack Snyder"
+    }
+    ,
+    {
+        "name":"1917" ,
+        "year":2019,
+        "country": "Reino Unido",
+        "rating":
+    7.7, 
+    "director":
+    "Sam Mendes"
+    }
+    ,
+    
+    {
+        "name":"Pequeña Miss Sunshine" ,
+        "year":2006 ,
+        "country": "Estados Unidos",
+        "rating":7.6,
+        "director":  
+    "Jonathan Dayton"
+    }
+    ,
+    {
+        "name":"Avengers: Endgame" ,
+        "year":2019 ,
+        "country": "Estados Unidos",
+        "rating":7.3,
+        "director":
+    "Anthony Russo"
+    }
+    ,
+    
+    {
+        "name":"Revenant: El renacido ",
+        "year":2015 ,
+        "country": "Estados Unidos",
+        "rating":7.2,
+        "director": 
+    "Alejandro González Iñárritu"
+    }
+    ,
+    
+    {
+        "name":"Dunkerque" ,
+        "year":2017,
+        "country": "Reino Unido",
+        "rating":7.0,
+    "director": 
+    "Christopher Nolan"
+    }
+    ,
+    
+    {
+        "name":"Sin lugar para los débiles" ,
+        "year":2007 ,
+        "country": "Estados Unidos",
+        "rating":7.2,
+        "director": 
+    "Joel Coen"
+    }
+    ,
+    {
+        "name":"El artista ",
+        "year":2011,
+        "country": "Francia",
+        "rating":
+    7.6,  
+    "director":
+    "Michel Hazanavicius"
+    }
+    ,
+    
+    {
+        "name":"Parasite" ,
+        "year":2019,
+        "country": "Corea del Sur",
+        "rating":8.0,
+        "director":
+    "Bong Joon-ho"
+    }
+    ,
+    
+    {
+        "name":"Los 8 más odiados ",
+        "year":2015 ,
+        "country": "Estados Unidos",
+        "rating":7.3,
+        "director":  
+    "Quentin Tarantino"
+    }
+    ,
+    {
+        "name":"Avengers: Infinity War" ,
+        "year":2018 ,
+        "country": "Estados Unidos",
+        "rating":7.5,
+        "director": 
+    "Anthony Russo"
+    }
+    ,
+    {
+        "name": "La llegada"
+    ,
+    "year":2016
+    ,
+    "country": "Estados Unidos",
+    "rating": 7.4,
+    "director": "Denis Villeneuve"
+    
+    }
+    ,
+    {
+        "name": "El señor de los anillos: El retorno del rey",
+        "year":2003,
+        "country": "Nueva Zelanda",
+        "rating": 8.2, 
+        "director":"Peter Jackson"
+        }
+    
+    
+    
+    ]
