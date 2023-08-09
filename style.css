@@ -13,3 +13,23 @@ body {
     color: rgb(18, 11, 105);
     
 }
+
+p{
+    font-weight: 600;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.main-option-box {
+    text-align: center;
+    background-color: #d6c7cc;
+    border-radius: 7px;
+    font-weight: 500;
+  }
+
+  h3{
+    font-weight: 650;
+  }

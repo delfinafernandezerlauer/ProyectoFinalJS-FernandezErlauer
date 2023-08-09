@@ -32,33 +32,6 @@ botonColorMode.addEventListener("click", () => {
 })
 
 
-// RECETAS ****************************
-
-const listaRecetas = document.querySelector("#lista-recetas"); //lista
-
-const formInputRecetas = document.querySelector("#form-input-recetas") //input
-
-const formRecetas = document.querySelector("#form-recetas") // form
-
-formRecetas.addEventListener("submit", agregarItem)
-
-
-function agregarItem(e){
-
-    e.preventDefault()
-    if(formInputRecetas!=""){
-       
-    let itemRecetas = document.createElement("li"); 
-
-    itemRecetas.innerText = formInputRecetas.value;
-
-    listaRecetas.append(itemRecetas)
-    }
-    else{
-        alert("input vacio")
-    }
-    //listaRecetas.reset()
-}
 
 // MATERIAS ***************************
 class Materia {
@@ -152,21 +125,21 @@ function agregarPresupuesto(e){
 
     e.preventDefault()
     if(formInputPresupuesto!=""){
-       
-    let presupuesto = document.createElement("p"); 
+        
+      let presupuesto = document.createElement("p"); 
 
-      if(!isNaN(formInputPresupuesto.value)){
-        presupuesto.innerText = formInputPresupuesto.value;
+        if(!isNaN(formInputPresupuesto.value)){
+          presupuesto.innerText = formInputPresupuesto.value;
 
-       localStorage.setItem("presupuestoEnStorage", formInputPresupuesto.value) 
+        localStorage.setItem("presupuestoEnStorage", formInputPresupuesto.value) 
 
-       listaPresupuesto.append(presupuesto)
-      }
-      else{
-        alert("Ingrese un presupuesto válido (números)");
- 
-      }
-      }
+        listaPresupuesto.append(presupuesto)
+        }
+        else{
+        swal("Ingrese un gasto válido", "(números)", "error");
+  
+        }
+        }
     else{
         alert("input vacio")
     }
@@ -204,7 +177,7 @@ function agregarGasto(e) {
     actualizarSaldo();
     formInputGastos.value = "";
   } else {
-    alert("ingrese un gasto válido (números)");
+    swal("Ingrese un gasto válido", "(números)", "error");
   }
 }
 
@@ -216,6 +189,17 @@ function actualizarGastoTotal() {
 function actualizarSaldo() {
   const saldo = presupuestoenStorage - gastoTotal;
   saldoElement.innerText = "saldo: " + saldo.toFixed(2);
+}
+
+function limpiarListas() {
+  const gastosItems = listaGastos.querySelectorAll("li");
+  const listaPresupuesto = document.querySelector("#lista-presupuesto");
+
+  listaPresupuesto.innerHTML = "";
+  
+  gastosItems.forEach((item) => {
+    listaGastos.removeChild(item);
+  });
 }
 
 actualizarGastoTotal();
@@ -233,7 +217,10 @@ function borrarDatos() {
 
   actualizarGastoTotal();
   actualizarSaldo();
+  limpiarListas();
 }
+
+
 
 formPresupuesto.addEventListener("submit", guardarPresupuesto);
 
@@ -246,8 +233,48 @@ function guardarPresupuesto(e) {
     actualizarSaldo();
     formInputPresupuesto.value = "";
   } else {
-    alert("Ingrese un presupuesto válido.");
+    swal("Ingrese un presupuesto válido", "(números)", "error");
   }
 }
 
 
+
+
+//////// PELICULAS
+
+const formPeliculas=document.querySelector("#form-peliculas");
+const inputPeliculas=document.querySelector("#input-peliculas");
+const resultadoRecomendacion = document.querySelector("#resultado-recomendacion");
+
+
+formPeliculas.addEventListener("submit", recomendarPelicula);
+
+
+function recomendarPelicula(e) {
+  e.preventDefault();
+
+
+  fetch("peliculas.json")
+    .then(response => response.json())
+    .then(data => {
+
+      const peliculas = data;
+
+      const peliculaAleatoria = peliculas[Math.floor(Math.random() * peliculas.length)];
+
+      const recomendacion = `
+        Nombre: ${peliculaAleatoria.name}
+        Año: ${peliculaAleatoria.year}
+        País: ${peliculaAleatoria.country}
+        Calificación: ${peliculaAleatoria.rating}
+        Director: ${peliculaAleatoria.director}
+
+      ...disfrutala!`;
+
+      resultadoRecomendacion.innerText = recomendacion;
+    })
+    .catch(error => {
+      console.error("Error al cargar el archivo JSON:", error);
+      resultadoRecomendacion.innerText = "Hubo un error al cargar las películas.";
+    });
+}

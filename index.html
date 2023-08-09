@@ -11,10 +11,11 @@
 <body >
 
     <header>
-        <div class="container p-4">
+        
+        <div class="container p-4 ">
             <h1 class="">Seguimiento de Estudiante!</h1>
         </div> 
-       
+       <img src="multimedia/sun-transparent-background-free-png.webp" alt="" width="300px" height="300px" class="rounded float-end">
         
     </header>
 
@@ -24,8 +25,9 @@
             <button id="switch-color" type="button" class="btn btn-light border ms-5 ">Cambiar de modo!</button>
         </section>
 
+        <!-- materias -->
 
-        <div class="container ">
+        <div class="container p-5">
 
             <div class="row pt-4">
                 <h3>Seguimiento de Materias</h3>
@@ -49,35 +51,43 @@
             
                 <div class="col ">
                     <ul>
-                        <h3>Buscador de promedio</h3>
+                        <h4>Buscador de promedio</h4>
                         <form id="form-buscador-materia">
                         <p>Ingrese materia a buscar:</p>
                         <input type="text" id="form-input-buscador-materia">
                         <input type="submit" value="Buscar">
                         </form>
+                        
                         <p id="resultado-buscador-materia"></p>
                     </ul>
                 </div>
+                <div class="col-lg-2">
+                    <img src="multimedia/Magnifying-Glass-PNG-No-Background.png" alt="" width="70px" height="70px">
+                </div>
             </div>
+
+            <!-- presupuesto y gastos -->
+
             <div class="row pt-5" >
                 <h3>Control de gastos</h3>
             </div>
             <div class="row py-4 text-end">
 
                 <div class="col">
+                    <form action="" id="form-presupuesto">
+                            
+                        <button type="button" class="btn btn-success border" id="borrar-datos">Borrar Datos</button>
+                        <p>Ingrese su presupuesto mensual </p>
+                        <input type="text" id="form-input-presupuesto">
+                        <input type="submit" value="Agregar presupuesto">
+                        
+                    </form>
+                        
                     <ul id="lista-presupuesto">
-                        <form action="" id="form-presupuesto">
-                            
-                            <button type="button" class="btn btn-successgit border" id="borrar-datos">Borrar Datos</button>
-                            <p>Ingrese su presupuesto mensual </p>
-                            <input type="text" id="form-input-presupuesto">
-                            <input type="submit" value="Agregar presupuesto">
-                            
-                        </form>
                     </ul>
                 </div>
                 <div class="col ">
-                    <ol id="lista-gastos ">
+                    <ol id="lista-gastos">
                         <form action="" id="form-gastos">
                             <p>Ingrese un gasto</p>
                             <input type="text" id="form-input-gastos">
@@ -95,28 +105,38 @@
                 </div>
             </div>
             
+        </div>
+
+        <!-- peliculas -->
+
+        <div class="container p-5 text-center">
+            <div class="row ">
+
+                <div class="col-lg-4 pe-5">
+                    <h3 class="">Recomendador de peliculas!
+
+                    </h3>
+                    <h5 class="p-5">Dale click para saber que mirar hoy</h5>
+                    <form action="" id="form-peliculas">
+                        <input type="submit" value="Recomendame algo!" id="input-peliculas">
+                    </form>
+                   
+                </div>
+
+                <div class="col-lg-6 ps-5 ">
+                    
+                    <p id="resultado-recomendacion"></p>
+                </div>
+                <div class="col-lg-2">
+                    <img src="multimedia/confetti-image-for-the-festival-background-simple-tin-foil-confetti-falling-background-colorful-confetti-on-a-transparent-background-event-and-party-celebration-elements-free-png.webp" alt="" width="260px" height="350px">
+                </div>
+            </div>
             
         </div>
 
-        <section>
-            <div class="container p-4">
-                <ul id="lista-recetas">
-                    <form action="" id="form-recetas">
-                        <h3>Ideas de comidas</h3>
-                        <input type="text" id="form-input-recetas">
-                        <input type="submit" value="Agregar idea">
-                    </form>
-                    <li>
-                        receta1
-                    </li>
-                </ul>
-            </div>
-           
-           
-        </section>
-
     </main>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
